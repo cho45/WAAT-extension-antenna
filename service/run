@@ -1,0 +1,9 @@
+#!/bin/sh
+exec 2>&1
+
+cd /home/pi/app/ANT
+bundle install --path vendor/bundle
+
+exec bundle exec ruby antenna.rb
+
+
