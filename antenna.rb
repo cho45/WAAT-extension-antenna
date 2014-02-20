@@ -11,7 +11,7 @@ require "i2c"
 
 ws = WebSocket::Client::Simple.connect 'ws://localhost:51234'
 
-avr = I2CDevice.new(0x65)
+avr = I2CDevice.new(address: 0x65)
 antenna_map = [
 	"UHV-6",
 	"MicroVert",
